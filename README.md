@@ -23,7 +23,7 @@ Set the following environment variables in the NaaVRE deployment:
 
 - `CELL_GITHUB=https://github.com/this-user/this-repo`
 - `CELL_GITHUB_TOKEN=github_pat_...` (Permissions: read access metadata; read
-  and write access actions and code on the current repo)
+  and write access actions and code aka 'Contents' on the current repo)
 
 If using the Github image registry, make sure that workflows have write permissions. In your repo's settings, select “Actions > General”. Under “Workflow permissions”, check “Read and write permissions” and save.
 
