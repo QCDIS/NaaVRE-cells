@@ -28,6 +28,8 @@ on:
         description: 'run identifier'
         required: false
 
+permissions: write-all
+
 jobs:
   choose-runner:
     runs-on: ubuntu-latest
@@ -59,9 +61,9 @@ jobs:
     # If build_dir is empty or build_dir
     - name: Check build directory
       run: |
-        if [[ -z "${{ github.event.inputs.build_dir }}" ]]; do
+        if [[ -z "${{ github.event.inputs.build_dir }}" ]]; then
           git pull origin main
-        done
+        then
       shell: bash
 
 
